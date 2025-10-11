@@ -1,0 +1,156 @@
+/* ----- imagen Section ----- */
+.imagen {
+  width: 100%;
+  height: 90vh; /* ocupa casi toda la altura de la ventana */
+  background-image: url("pelucinfantil.png"); /* cambia por tu imagen */
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  position: relative;
+}
+
+/* Oscurecer un poco la imagen para que el texto resalte */
+.imagen::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.35);
+}
+
+/* Contenido de la imagen */
+.imagen-content {
+  position: relative;
+  z-index: 1;
+  max-width: 700px;
+  padding: 20px;
+}
+
+.imagen-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+
+.imagen-content p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .imagen {
+    height: 70vh;
+    padding: 20px;
+  }
+
+  .imagen-content h1 {
+    font-size: 1.8rem;
+  }
+
+  .imagen-content p {
+    font-size: 1rem;
+  }
+}
+.txtimagen{
+    font-size: 500px;
+
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  
+  font-style: normal;
+  font-weight: bold;
+    
+}
+
+.txtimagen2{
+ font-size: 500px;
+    
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  
+  font-style: normal;
+  font-weight: bold;
+    
+}
+/* ----- Sección de contenido principal ----- */
+.contenido {
+  background-color: #eaf8f0; /* verde pastel muy claro */
+  padding: 60px 20px;
+  text-align: center;
+  color: #333;
+}
+
+.contenido h2 {
+  font-size: 2rem;
+  color: #2a7a52; /* verde más intenso para contraste */
+  margin-bottom: 20px;
+}
+
+.contenido p {
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+/*--------------------------------------------------*/
+/* ----- Contenedor de las cards ----- */
+.cards-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 30px;
+  flex-wrap: wrap; /* Se acomodan una debajo de otra en pantallas pequeñas */
+  margin-top: 40px;
+}
+
+/* ----- Card individual ----- */
+.card {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden; /* Para que las esquinas redondeadas afecten también a la imagen */
+  width: 18rem; /* mismo tamaño que el tuyo */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* ----- Imagen de la card ----- */
+.card-img-top {
+  width: 100%;
+  height: 200px;
+  object-fit: cover; /* Ajusta la imagen sin deformarla */
+}
+
+/* ----- Cuerpo del texto ----- */
+.card-body {
+  padding: 20px;
+}
+
+.card-text {
+  color: #333;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/* ----- Responsivo ----- */
+@media (max-width: 900px) {
+  .cards-container {
+    gap: 20px;
+  }
+
+  .card {
+    width: 90%;
+  }
+}

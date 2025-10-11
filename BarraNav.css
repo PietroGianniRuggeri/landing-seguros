@@ -1,14 +1,14 @@
 .nombre {
     color: #FF8A2B;
-    font-size: 60px;
+    font-size: 64px;
     text-decoration: solid;
-    .raleway-<uniquifier> {
+    
   font-family: "Raleway", sans-serif;
   font-optical-sizing: auto;
   
   font-style: normal;
   font-weight: bold;
-    }
+    
 }
 .negocio {
     color: #F06292;
