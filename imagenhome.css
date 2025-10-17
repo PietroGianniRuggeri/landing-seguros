@@ -1,8 +1,8 @@
 /* ----- imagen Section ----- */
 .imagen {
   width: 100%;
-  height: 90vh; /* ocupa casi toda la altura de la ventana */
-  background-image: url("pelucinfantil.png"); /* cambia por tu imagen */
+  height: 60vh; /* ocupa casi toda la altura de la ventana */
+  background-image: url("/Imagenes&iconos/pelucinfantil.png"); /* cambia por tu imagen */
   background-size: cover;
   background-position: center;
   display: flex;
