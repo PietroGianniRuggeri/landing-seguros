@@ -1,6 +1,6 @@
 .nombre {
-    color: #FF8A2B;
-    font-size: 64px;
+    color: #fc8b2f;
+    font-size: 50px;
     text-decoration: solid;
     
   font-family: "Raleway", sans-serif;
@@ -11,13 +11,19 @@
     
 }
 .negocio {
-    color: #F06292;
+    color: #ef5986;
     font-weight: bold;
+}
+nav.navbar {
+background-color: #FAF8F5;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.308);
+  padding-top: 0.1rem;
+  padding-bottom: 0.1rem;
 }
 /* ----- Botón del formulario ----- */
 .btn-form {
-  background-color: #ffb703;
-  color: #000;
+  background-color: #FF8A2B;
+  color: #ffffff;
   padding: 8px 15px;
   border-radius: 6px;
   text-decoration: none;
@@ -27,4 +33,34 @@
 
 .btn-form:hover {
   background-color: #fca311;
+}
+/* ----- Ítems del menú ----- */
+.nav-item {
+  background: #fc8b2f;         
+}
+/*----------------------------------*/
+ul.nav {
+    background-color: #fc8b2f;   
+     width: 100%;              /* ✅ Se extiende a todo el ancho */
+  margin: 0;                /* ✅ Elimina márgenes del container */
+  padding: 0.5rem 0;        /* ✅ Un poco de aire vertical */
+  display: flex;
+  justify-content: center;  /* Centra los ítems */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.651);
+}
+/* ----- Enlaces ----- */
+.nav-link {
+  color: #663300;             /* Color de texto normal */
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+/* ----- Hover (cuando pasa el mouse) ----- */
+.nav-link:hover {
+  color: white;             /*  Color al pasar el mouse */
+}
+
+/* ----- Estado activo o seleccionado ----- */
+.nav-link.active {
+  color: white;             /* También blanco para el activo */
 }
