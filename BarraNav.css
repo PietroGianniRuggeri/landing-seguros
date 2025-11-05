@@ -35,12 +35,12 @@ background-color: #FAF8F5;
   background-color: #fca311;
 }
 /* ----- Ítems del menú ----- */
-.nav-item {
+.nav {
   background: #fc8b2f;         
 }
 /*----------------------------------*/
 ul.nav {
-    background-color: #fc8b2f;   
+   /*  background-color: #fc8b2f;   */ 
      width: 100%;              /* ✅ Se extiende a todo el ancho */
   margin: 0;                /* ✅ Elimina márgenes del container */
   padding: 0.5rem 0;        /* ✅ Un poco de aire vertical */
