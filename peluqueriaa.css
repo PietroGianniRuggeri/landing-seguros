@@ -16,7 +16,7 @@
     font-weight: bold;
 }
 nav.navbar {
-background-color: #FAF8F5;
+background-color: #A7E4EC;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.308);
   padding-top: 0.1rem;
   padding-bottom: 0.1rem;
@@ -140,3 +140,151 @@ ul.nav {
 }
 
 /*________________________________________________________________________________*/
+.consulta { /* --- (Imagen de Fondo) ---*/
+  background-image: url("./assets/Imagenes-patron.png"); /*  imagen de patrón */
+  background-repeat: repeat; /* se repite en mosaico */
+  background-size: 200px; /* ajustá el tamaño del patrón */
+  background-position: center;
+  padding: 60px 20px;
+  text-align: center;
+}
+ 
+/*------ Card (Qienes somos) ------*/
+.card-quienes-somos {
+  background-color: #A7E4EC; /* celeste suave */
+  border: none;
+  border-radius: 30px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  max-width: 900px; /* ancho grande pero centrado */
+}
+
+.text-quienes {
+  color: #FF66B2; /* rosa */
+  font-weight: bold;
+  font-size: 2.2rem;
+}
+
+.card-text {
+  font-size: 1.1rem;
+  color: #333;
+  line-height: 1.6;
+}
+
+/*____________( Promo )____________*/
+.card-horizontal {
+  border: none;
+  border-radius: 20px;
+  overflow: hidden; /* evita que las esquinas redondeadas se vean cortadas */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  background-color: #FAF8F5;
+}
+
+.card-horizontal img {
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-horizontal .card-body {
+  padding: 30px;
+}
+
+.card-horizontal .card-title {
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  color: #ef5986;
+  margin-bottom: 15px;
+  font-size: 1.8rem;
+}
+
+.card-horizontal .card-text {
+  font-size: 1.1rem;
+  color: #333;
+  line-height: 1.6;
+}
+/*___Responsive___*/
+@media (max-width: 768px) {
+  .card-horizontal .row {
+    flex-direction: column !important;
+  }
+  .card-horizontal img {
+    border-radius: 20px 20px 0 0;
+    width: 100%;
+  }
+}
+
+
+
+/*__________________________________________________________________________________*/
+/*----- Footer -----*/
+.footer {
+  background-color: #A7E4EC; 
+  color: #286887;
+  padding: 50px 20px 20px 20px;
+  margin-top: 80px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  max-width: 1100px;
+  margin: 0 auto;
+  gap: 40px;
+}
+
+.footer-info h3 {
+  color: #134360;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.footer-info p {
+  max-width: 250px;
+  line-height: 1.5;
+}
+
+.footer-contact p {
+  margin: 5px 0;
+}
+
+.footer-social p {
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.social-icons a img {
+  width: 28px;
+  margin-right: 10px;
+  transition: transform 0.3s ease;
+}
+
+.social-icons a img:hover {
+  transform: scale(1.2);
+}
+
+/* Línea inferior */
+.footer-bottom {
+  text-align: center;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  margin-top: 30px;
+  padding-top: 15px;
+  font-size: 0.9rem;
+  color: #134360;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-info p {
+    max-width: 100%;
+  }
+}
+
+

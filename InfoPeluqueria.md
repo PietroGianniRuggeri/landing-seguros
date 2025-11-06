@@ -40,5 +40,3 @@ colores
 #134360 -- titulos
 
 ------------------------------------------------------------------
-<nav class="navbar bg-body-tertiary">
-  <div class="container">
