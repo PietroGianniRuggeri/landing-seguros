@@ -1,0 +1,290 @@
+/* --------- Barra de navegacion --------- */
+.nombre {
+    color: #fc8b2f;
+    font-size: 50px;
+    text-decoration: solid;
+    
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  
+  font-style: normal;
+  font-weight: bold;
+    
+}
+.negocio {
+    color: #ef5986;
+    font-weight: bold;
+}
+nav.navbar {
+background-color: #A7E4EC;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.308);
+  padding-top: 0.1rem;
+  padding-bottom: 0.1rem;
+}
+/* ----- Botón del formulario ----- */
+.btn-form {
+  background-color: #FF8A2B;
+  color: #ffffff;
+  padding: 8px 15px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.btn-form:hover {
+  background-color: #fca311;
+}
+/* ----- Ítems del menú ----- */
+.nav-item {
+  background: #A7E4EC          /*-- #fc8b2f --*/
+}
+/*----------------------------------*/
+ul.nav {
+    background-color: #A7E4EC;   /*-- #fc8b2f --*/
+     width: 100%;              /* Se extiende a todo el ancho */
+  margin: 0;                /*  Elimina márgenes del container */
+  padding: 0.5rem 0;        /*  Un poco de aire vertical */
+  display: flex;
+  justify-content: center;  /* Centra los ítems */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.651);
+}
+/* ----- Enlaces ----- */
+.nav-link {
+  color: #663300;             /* Color de texto normal */
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+/* ----- Hover (cuando pasa el mouse) ----- */
+.nav-link:hover {
+  color: white;             /*  Color al pasar el mouse */
+}
+
+/* ----- Estado activo o seleccionado ----- */
+.nav-link.active {
+  color: white;             /* También blanco para el activo */
+}
+
+/* ----- Imagen ----- */
+.imagen {
+  width: 100%;
+  height: 60vh; /* ocupa casi toda la altura de la ventana */
+  background-image: url("/Imagenes/salonDifuminado.png"); /* cambia por tu imagen */
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  position: relative;
+}
+
+/* Oscurecer un poco la imagen para que el texto resalte */
+.imagen::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.35);
+}
+
+/* Contenido de la imagen */
+.imagen-content {
+  position: relative;
+  z-index: 1;
+  max-width: 700px;
+  padding: 20px;
+}
+
+.imagen-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+
+.imagen-content p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .imagen {
+    height: 70vh;
+    padding: 20px;
+  }
+  .imagen-content h1 {
+    font-size: 1.8rem;
+  }
+  .imagen-content p {
+    font-size: 1rem;
+  }
+}
+.txtimagen{
+    font-size: 500px;
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;  
+  font-style: normal;
+  font-weight: bold;    
+}
+.txtimagen2{
+ font-size: 500px;    
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;  
+  font-style: normal;
+  font-weight: bold;    
+}
+
+/*________________________________________________________________________________*/
+.consulta { /* --- (Imagen de Fondo) ---*/
+  background-image: url("./assets/Imagenes-patron.png"); /*  imagen de patrón */
+  background-repeat: repeat; /* se repite en mosaico */
+  background-size: 200px; /* ajustá el tamaño del patrón */
+  background-position: center;
+  padding: 60px 20px;
+  text-align: center;
+}
+ 
+/*------ Card (Qienes somos) ------*/
+.card-quienes-somos {
+  background-color: #A7E4EC; /* celeste suave */
+  border: none;
+  border-radius: 30px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  max-width: 900px; /* ancho grande pero centrado */
+}
+
+.text-quienes {
+  color: #FF66B2; /* rosa */
+  font-weight: bold;
+  font-size: 2.2rem;
+}
+
+.card-text {
+  font-size: 1.1rem;
+  color: #333;
+  line-height: 1.6;
+}
+
+/*____________( Promo )____________*/
+.card-horizontal {
+  border: none;
+  border-radius: 20px;
+  overflow: hidden; /* evita que las esquinas redondeadas se vean cortadas */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  background-color: #FAF8F5;
+}
+
+.card-horizontal img {
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-horizontal .card-body {
+  padding: 30px;
+}
+
+.card-horizontal .card-title {
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  color: #ef5986;
+  margin-bottom: 15px;
+  font-size: 1.8rem;
+}
+
+.card-horizontal .card-text {
+  font-size: 1.1rem;
+  color: #333;
+  line-height: 1.6;
+}
+/*___Responsive___*/
+@media (max-width: 768px) {
+  .card-horizontal .row {
+    flex-direction: column !important;
+  }
+  .card-horizontal img {
+    border-radius: 20px 20px 0 0;
+    width: 100%;
+  }
+}
+
+
+
+/*__________________________________________________________________________________*/
+/*----- Footer -----*/
+.footer {
+  background-color: #A7E4EC; 
+  color: #286887;
+  padding: 50px 20px 20px 20px;
+  margin-top: 80px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  max-width: 1100px;
+  margin: 0 auto;
+  gap: 40px;
+}
+
+.footer-info h3 {
+  color: #134360;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.footer-info p {
+  max-width: 250px;
+  line-height: 1.5;
+}
+
+.footer-contact p {
+  margin: 5px 0;
+}
+
+.footer-social p {
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.social-icons a img {
+  width: 28px;
+  margin-right: 10px;
+  transition: transform 0.3s ease;
+}
+
+.social-icons a img:hover {
+  transform: scale(1.2);
+}
+
+/* Línea inferior */
+.footer-bottom {
+  text-align: center;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  margin-top: 30px;
+  padding-top: 15px;
+  font-size: 0.9rem;
+  color: #134360;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-info p {
+    max-width: 100%;
+  }
+}
+
+
