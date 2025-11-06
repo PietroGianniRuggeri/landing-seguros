@@ -1,0 +1,142 @@
+/* --------- Barra de navegacion --------- */
+.nombre {
+    color: #fc8b2f;
+    font-size: 50px;
+    text-decoration: solid;
+    
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  
+  font-style: normal;
+  font-weight: bold;
+    
+}
+.negocio {
+    color: #ef5986;
+    font-weight: bold;
+}
+nav.navbar {
+background-color: #FAF8F5;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.308);
+  padding-top: 0.1rem;
+  padding-bottom: 0.1rem;
+}
+/* ----- Botón del formulario ----- */
+.btn-form {
+  background-color: #FF8A2B;
+  color: #ffffff;
+  padding: 8px 15px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.btn-form:hover {
+  background-color: #fca311;
+}
+/* ----- Ítems del menú ----- */
+.nav-item {
+  background: #A7E4EC          /*-- #fc8b2f --*/
+}
+/*----------------------------------*/
+ul.nav {
+    background-color: #A7E4EC;   /*-- #fc8b2f --*/
+     width: 100%;              /* Se extiende a todo el ancho */
+  margin: 0;                /*  Elimina márgenes del container */
+  padding: 0.5rem 0;        /*  Un poco de aire vertical */
+  display: flex;
+  justify-content: center;  /* Centra los ítems */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.651);
+}
+/* ----- Enlaces ----- */
+.nav-link {
+  color: #663300;             /* Color de texto normal */
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+/* ----- Hover (cuando pasa el mouse) ----- */
+.nav-link:hover {
+  color: white;             /*  Color al pasar el mouse */
+}
+
+/* ----- Estado activo o seleccionado ----- */
+.nav-link.active {
+  color: white;             /* También blanco para el activo */
+}
+
+/* ----- Imagen ----- */
+.imagen {
+  width: 100%;
+  height: 60vh; /* ocupa casi toda la altura de la ventana */
+  background-image: url("/Imagenes/salonDifuminado.png"); /* cambia por tu imagen */
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  position: relative;
+}
+
+/* Oscurecer un poco la imagen para que el texto resalte */
+.imagen::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.35);
+}
+
+/* Contenido de la imagen */
+.imagen-content {
+  position: relative;
+  z-index: 1;
+  max-width: 700px;
+  padding: 20px;
+}
+
+.imagen-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+
+.imagen-content p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .imagen {
+    height: 70vh;
+    padding: 20px;
+  }
+  .imagen-content h1 {
+    font-size: 1.8rem;
+  }
+  .imagen-content p {
+    font-size: 1rem;
+  }
+}
+.txtimagen{
+    font-size: 500px;
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;  
+  font-style: normal;
+  font-weight: bold;    
+}
+.txtimagen2{
+ font-size: 500px;    
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;  
+  font-style: normal;
+  font-weight: bold;    
+}
+
+/*________________________________________________________________________________*/
