@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reservar turno | Peluca</title>
+  <link rel="stylesheet" href="turno.css">
+</head>
+<body>
+
+  <section class="form-section">
+    <div class="form-container">
+      <h2>Reservá tu turno</h2>
+      <p>Completá el formulario y nos pondremos en contacto para confirmar tu cita. ¡Queremos que tu peque disfrute su corte sin estrés!</p>
+
+      <form action="#" method="post">
+        <div class="form-group">
+          <label for="nombre">Nombre del niño o niña</label>
+          <input type="text" id="nombre" name="nombre" required>
+        </div>
+
+        <div class="form-group">
+          <label for="edad">Edad</label>
+          <input type="number" id="edad" name="edad" min="1" max="12" required>
+        </div>
+
+        <div class="form-group">
+          <label for="servicio">Servicio</label>
+          <select id="servicio" name="servicio" required>
+            <option value="">Seleccioná un servicio</option>
+            <option value="corte">Corte divertido</option>
+            <option value="peinado">Peinado con estilo</option>
+            <option value="primer-corte">Primer corte especial</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="fecha">Fecha preferida</label>
+          <input type="date" id="fecha" name="fecha" required>
+        </div>
+
+        <div class="form-group">
+          <label for="hora">Hora preferida</label>
+          <input type="time" id="hora" name="hora" required>
+        </div>
+
+        <div class="form-group">
+          <label for="contacto">Teléfono o correo electrónico</label>
+          <input type="text" id="contacto" name="contacto" required>
+        </div>
+
+        <button type="submit" class="btn-reservar">Reservar turno</button>
+      </form>
+    </div>
+  </section>
+
+</body>
+</html>
