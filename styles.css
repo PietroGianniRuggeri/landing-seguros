@@ -17,12 +17,7 @@
     font-weight: bold;
     line-height: 2;
 }
-nav.navbar {
-background-color: #FAF8F5;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.308);
-  padding-top: 0.1rem;
-  padding-bottom: 0.1rem;
-}
+
 
 /* ----- Botón del formulario ----- */
 .btn-form {
@@ -58,6 +53,24 @@ ul.nav {
   color: #663300 !important;             /* Color de texto normal */
   font-weight: 500 !important;
   transition: color 0.3s ease !important;
+}
+
+nav.navbar {
+background-color: #FAF8F5;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.308);
+  padding-top: 0.1rem;
+  padding-bottom: 0.1rem;
+}
+
+.active {
+  font-weight: bold !important;
+  color: #663300bd !important;
+  text-decoration: underline !important;
+  text-underline-offset: 4px !important;
+}
+
+.nav-link:hover {
+  color: white !important;            
 }
 
 
