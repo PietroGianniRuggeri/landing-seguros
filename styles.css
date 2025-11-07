@@ -61,10 +61,61 @@ ul.nav {
 }
 
 
-/* Seccion 1 */
+/* Seccion servicios */
+
+.servicios { /* --- Imagen de Fondo ---*/
+  background-image: url("./assets/Imagenes-patron.png"); /*  imagen de patrón */
+  background-repeat: repeat; /* se repite en mosaico */
+  background-size: 200px; /* ajustá el tamaño del patrón */
+  background-position: center;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.titulo-servicios {
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 2.5rem;
+  color: #ef5986;
+  margin-bottom: 40px;
+}
+.parrafo-servicio {
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
 
 
-/* Seccion 2 */
+/* Seccion recomendaciones */
+
+.recomendaciones {
+  background-color: #A7E4EC;
+  padding: 80px 40px;
+  border-radius: 30px;
+  margin: 60px auto;
+  max-width: 1000px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  text-align: left; /* todo el texto alineado a la izquierda */
+}
+
+.titulo-recomendaciones {
+  text-align: center; /*  título centrado */
+  font-family: "Raleway", sans-serif; 
+  font-weight: 800; 
+  font-size: 2.5rem; color: #ef5986;
+}
+
+.recomendaciones ul {
+  list-style-position: inside; /* las viñetas quedan dentro del área del texto */
+  padding-left: 1.5rem; /* un poco de margen */
+  margin-top: 20px;
+}
+
+.recomendaciones li {
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
 
 
 /* Seccion 3 */
