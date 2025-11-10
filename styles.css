@@ -238,7 +238,7 @@ background-color: #FAF8F5;
     .btn-arrow:not(.collapsed) i {
       transform: rotate(180deg);
     }
-    
+
 /*___Responsive___*/
 @media (max-width: 576px) {
  .card-quienes-somos {
@@ -439,3 +439,26 @@ background-color: #FAF8F5;
     max-width: 100%;
   }
 }
+
+
+/*----- Sucursales -----*/
+
+.object-fit-cover {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+
+  /* Card hover sutil */
+  .card:hover {
+    transform: translateY(-4px);
+    transition: transform .18s ease;
+  }
+
+  /* Hacer que las cards tengan la misma altura y que el botón quede al final */
+  .card .card-body { display: flex; flex-direction: column; }
+
+  /* Ajustes responsivos: más espacio en pantallas pequeñas */
+  @media (max-width: 575.98px) {
+    #sucursales { padding-top: 3rem; padding-bottom: 3rem; }
+  }
