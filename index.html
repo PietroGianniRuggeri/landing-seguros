@@ -4,13 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Peluca</title>
+    <title>Peluka</title>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">    
 </head>
 
 <body>
@@ -20,7 +21,7 @@
                 <div class="d-flex justify-content-start align-items-center">
                     <img src="./assets/Logo1.png" alt="Logo" width="auto" height="120">
                     <div class="pt-5">
-                        <p class="nombre"> Peluca </p>
+                        <p class="nombre"> Peluka </p>
                         <p class="negocio"> Peluqueria Infantil </p>
                     </div>
                 </div>
@@ -104,15 +105,52 @@
 
         <section class="row align-items-center justify-content-center servicios m-0 p-0 ">
 
-            <div class="col-11 col-md-11 text-center my-4">
+            <div class="col-12 col-md-11 text-center my-4">
                 <!--.................Quienes somos......................-->
                 <section class="Presentacion"> <!--imagen de fondo-->
                     <!-- CARD -->
-                    <div class="container my-5">
-                        <div class="card card-quienes-somos mx-auto">
-                            <div class="card-body text-center p-5">
+                    <div class="container my-sm-5 px-1">
+                        <div class="card card-quienes-somos mx-sm-auto">
+                            <div class="card-body text-center p-sm-5">
                                 <h2 class="card-title text-quienes">Quiénes somos</h2>
-                                <p class="card-text mt-4">
+
+                                <!-- Texto corto -->
+                                <span class="card-text mt-4 d-sm-none">
+                                   En Peluka nacimos de una pasión: el amor por los niños y la dedicación a su
+                                    bienestar. Descubrimos que el mundo de la peluquería infantil era un rubro poco
+                                    explorado, y quisimos crear un espacio pensado especialmente para ellos un lugar
+                                    donde cortarse el pelo no sea una obligación, sino una experiencia linda y
+                                    divertida.
+                                </span>
+
+                                <!-- Texto completo oculto inicialmente -->
+                                <span class="card-text collapse" id="textoCompleto">
+                                    Atendemos a niños de 1 a 12 años, pero también pensamos en los padres: queremos que
+                                    sientan confianza y tranquilidad al saber que sus hijos están en manos de un equipo
+                                    profesional, paciente y cariñoso. Nuestro objetivo es que cada visita sea sin
+                                    estrés, segura y llena de sonrisas.
+                                    El ambiente en Peluka es tranquilo y alegre, con colores, juegos y detalles que
+                                    transforman la espera en parte de la diversión. Contamos con sillas temáticas de
+                                    autos y una sala de juegos para que los peques se entretengan mientras esperan su
+                                    turno. Además, ofrecemos productos de cuidado capilar de calidad, especialmente
+                                    diseñados para el cabello de los niños.
+                                    Somos un equipo de cuatro profesionales más un cuidador que acompaña y asiste a los
+                                    pequeños durante su visita. Trabajamos con cariño, paciencia y respeto, priorizando
+                                    siempre la seguridad, la higiene y la comodidad de cada niño.
+                                    En Peluka creemos que la confianza de los padres y la alegría de los niños son la
+                                    mejor recompensa.
+                                    ✨ Peluka: donde cada corte se convierte en una sonrisa.
+                                </span>
+
+                                <!-- Botón colapsable solo visible en móvil -->
+                                <button class="btn btn-arrow p-0 d-sm-none collapsed" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#textoCompleto" aria-expanded="false"
+                                    aria-controls="textoCompleto">
+                                    <b>Leer más <i class="bi bi-chevron-down"></i></b> 
+                                </button>
+
+                                <!-- Texto completo para escritorio -->
+                                <p class="d-none d-sm-block card-text mt-4">
                                     En Peluka nacimos de una pasión: el amor por los niños y la dedicación a su
                                     bienestar. Descubrimos que el mundo de la peluquería infantil era un rubro poco
                                     explorado, y quisimos crear un espacio pensado especialmente para ellos —un lugar
@@ -134,47 +172,48 @@
                                     mejor recompensa.
                                     ✨ Peluka: donde cada corte se convierte en una sonrisa.
                                 </p>
+
                             </div>
                         </div>
                     </div>
             </div>
-            
-                <div class="card mb-4 card-horizontal col-11 px-0">
-                    <div class="row g-0 align-items-center flex-row-reverse">
-                        <!-- Imagen a la derecha -->
 
-                        <div class="col-md-6 col-lg-4 mr-md-3">
-                            <img src="./assets/promo.png" class="img-fluid rounded-end card-img" alt="miedo">
-                        </div>
-                        <div class="col-md-6 col-lg-8">
-                            <div class="card-body">
-                                <h5 class="card-title">¡Promo especial de noviembre!</h5>
-                                <p class="card-text">
-                                    <strong>2x1 en cortes infantiles</strong> durante todo el mes. Vení con tu peque y
-                                    su mejor amigo o hermano ¡y uno de los cortes va por nuestra cuenta!
-                                </p>
-                                <p class="card-text">
-                                    Promoción válida hasta el 30 de noviembre. No acumulable con otras ofertas.
-                                </p>
-                            </div>
+            <div class="card mb-4 card-horizontal col-11 px-0">
+                <div class="row g-0 align-items-center flex-row-reverse">
+                    <!-- Imagen a la derecha -->
+
+                    <div class="col-md-6 col-lg-4 mr-md-3">
+                        <img src="./assets/promo.png" class="img-fluid rounded-end card-img" alt="miedo">
+                    </div>
+                    <div class="col-md-6 col-lg-8">
+                        <div class="card-body">
+                            <h5 class="card-title">¡Promo especial de noviembre!</h5>
+                            <p class="card-text">
+                                <strong>2x1 en cortes infantiles</strong> durante todo el mes. Vení con tu peque y
+                                su mejor amigo o hermano ¡y uno de los cortes va por nuestra cuenta!
+                            </p>
+                            <p class="card-text">
+                                Promoción válida hasta el 30 de noviembre. No acumulable con otras ofertas.
+                            </p>
                         </div>
                     </div>
                 </div>
-            
+            </div>
+
 
         </section>
 
         <footer class="footer">
             <div class="footer-container">
                 <div class="footer-info">
-                    <h3>Peluca ✂️</h3>
+                    <h3>Peluka ✂️</h3>
                     <p>Peluquería infantil con amor, paciencia y mucha diversión.</p>
                 </div>
 
                 <div class="footer-contact">
                     <p><strong>📍 Dirección:</strong> Av. Sonrisas 123, Ciudad Feliz</p>
                     <p><strong>📞 Teléfono:</strong> +54 9 11 1234-5678</p>
-                    <p><strong>📧 Email:</strong> contacto@peluca.com</p>
+                    <p><strong>📧 Email:</strong> contacto@peluka.com</p>
                 </div>
 
                 <div class="footer-social">
@@ -188,7 +227,7 @@
             </div>
 
             <div class="footer-bottom">
-                <p>© 2025 Peluca. Todos los derechos reservados.</p>
+                <p>© 2025 Peluka. Todos los derechos reservados.</p>
             </div>
         </footer>
     </div>
