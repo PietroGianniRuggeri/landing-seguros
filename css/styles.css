@@ -77,7 +77,7 @@ background-color: #FAF8F5;
 /* Seccion servicios */
 
 .servicios { /* --- Imagen de Fondo ---*/
-  background-image: url("./assets/Imagenes-patron.png"); /*  imagen de patrón */
+  background-image: url("../assets/Imagenes-patron.png"); /*  imagen de patrón */
   background-repeat: repeat; /* se repite en mosaico */
   background-size: 200px; /* ajustá el tamaño del patrón */
   background-position: center;
@@ -189,7 +189,7 @@ background-color: #FAF8F5;
 /*------ Card (Qienes somos) ------*/
 
 .consulta { /* --- (Imagen de Fondo) ---*/
-  background-image: url("./assets/Imagenes-patron.png"); /*  imagen de patrón */
+  background-image: url("../assets/Imagenes-patron.png"); /*  imagen de patrón */
   background-repeat: repeat; /* se repite en mosaico */
   background-size: 200px; /* ajustá el tamaño del patrón */
   background-position: center;
