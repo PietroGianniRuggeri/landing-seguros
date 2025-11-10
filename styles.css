@@ -460,4 +460,16 @@ background-color: #FAF8F5;
   /* Ajustes responsivos: más espacio en pantallas pequeñas */
   @media (max-width: 575.98px) {
     #sucursales { padding-top: 3rem; padding-bottom: 3rem; }
+    .mapa {
+      width: 90vw !important;
+      height: 80vh !important;
+    }
+  }
+
+  @media (max-width: 993px) { 
+
+     .mapa {
+      width: 95vw;
+      height: 80vh;
+    }
   }
