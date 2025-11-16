@@ -1,58 +1,138 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Reservar turno | Peluka</title>
-  <link rel="stylesheet" href="./css/styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peluka</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 </head>
+
 <body>
-
-  <section class="form-section">
-    <div class="form-container">
-      <h2>Reservá tu turno</h2>
-      <p>Completá el formulario y nos pondremos en contacto para confirmar tu cita. ¡Queremos que tu peque disfrute su corte sin estrés!</p>
-
-      <form action="#" method="post">
-        <div class="form-group">
-          <label for="nombre">Nombre del niño o niña</label>
-          <input type="text" id="nombre" name="nombre" required>
+    <header class="container-fluid ">
+        <div class="row">
+            <div class="col-12 col-sm-6">
+                <div class="d-flex justify-content-start align-items-center">
+                    <img src="./assets/Logo1.png" alt="Logo" width="auto" height="120">
+                    <div class="pt-5">
+                        <p class="nombre"> Peluka </p>
+                        <p class="negocio"> Peluqueria Infantil </p>
+                    </div>
+                </div>
+            </div>
         </div>
+    </header>
 
-        <div class="form-group">
-          <label for="edad">Edad</label>
-          <input type="number" id="edad" name="edad" min="1" max="12" required>
+    <nav class="navbar navbar-expand-lg navbar-light nav-item ">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+            aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarScroll">
+            <ul class="navbar-nav mx-auto px-4 px-sm-4 py-4 py-sm-4">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="servicios.html">Servicios</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="sucursales.html">Sucursales</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="faqs.html">Preguntas Frecuentes</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">Turnos</a>
+                </li>
+            </ul>
         </div>
+    </nav>
+    <section class="form-section">
+        <div class="form-container">
+            <h2>Reservá tu turno</h2>
+            <p>Completá el formulario y nos pondremos en contacto para confirmar tu cita. ¡Queremos que tu
+                peque disfrute su corte sin estrés!</p>
 
-        <div class="form-group">
-          <label for="servicio">Servicio</label>
-          <select id="servicio" name="servicio" required>
-            <option value="">Seleccioná un servicio</option>
-            <option value="corte">Corte divertido</option>
-            <option value="peinado">Peinado con estilo</option>
-            <option value="primer-corte">Primer corte especial</option>
-          </select>
+            <form action="#" method="post">
+                <div class="form-group">
+                    <label for="nombre">Nombre del niño o niña</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="edad">Edad</label>
+                    <input type="number" id="edad" name="edad" min="1" max="12" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="servicio">Servicio</label>
+                    <select id="servicio" name="servicio" required>
+                        <option value="">Seleccioná un servicio</option>
+                        <option value="corte">Corte divertido</option>
+                        <option value="peinado">Peinado con estilo</option>
+                        <option value="primer-corte">Primer corte especial</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="fecha">Fecha preferida</label>
+                    <input type="date" id="fecha" name="fecha" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="hora">Hora preferida</label>
+                    <input type="time" id="hora" name="hora" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="contacto">Teléfono o correo electrónico</label>
+                    <input type="text" id="contacto" name="contacto" required>
+                </div>
+
+                <button type="submit" class="btn-reservar">Reservar turno</button>
+            </form>
         </div>
+    </section>
+    <div class="container-fluid p-0 m-0">
+     
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="footer-info">
+                    <h3>Peluka ✂️</h3>
+                    <p>Peluquería infantil con amor, paciencia y mucha diversión.</p>
+                </div>
 
-        <div class="form-group">
-          <label for="fecha">Fecha preferida</label>
-          <input type="date" id="fecha" name="fecha" required>
-        </div>
+                <div class="footer-contact">
+                    <p><strong>📍 Dirección:</strong> Av. Sonrisas 123, Ciudad Feliz</p>
+                    <p><strong>📞 Teléfono:</strong> +54 9 11 1234-5678</p>
+                    <p><strong>📧 Email:</strong> contacto@peluka.com</p>
+                </div>
 
-        <div class="form-group">
-          <label for="hora">Hora preferida</label>
-          <input type="time" id="hora" name="hora" required>
-        </div>
+                <div class="footer-social">
+                    <p>Seguinos en redes</p>
+                    <div class="social-icons">
+                        <a href="#"><img src="./assets/facebook.svg" alt="Facebook"></a>
+                        <a href="#"><img src="./assets/instagram.svg" alt="Instagram"></a>
+                        <a href="#"><img src="./assets/logo-tiktok.svg" alt="TikTok"></a>
+                    </div>
+                </div>
+            </div>
 
-        <div class="form-group">
-          <label for="contacto">Teléfono o correo electrónico</label>
-          <input type="text" id="contacto" name="contacto" required>
-        </div>
-
-        <button type="submit" class="btn-reservar">Reservar turno</button>
-      </form>
+            <div class="footer-bottom">
+                <p>© 2025 Peluka. Todos los derechos reservados.</p>
+            </div>
+        </footer>
     </div>
-  </section>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>

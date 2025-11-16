@@ -65,9 +65,17 @@ background-color: #FAF8F5;
 .active {
   font-weight: bold !important;
   color: #663300bd !important;
+  text-decoration: underline !important;/* 
+  text-underline-offset: 4px !important; */
+}
+
+/* .activeForm {
+  font-weight: bold !important;
+  color: white !important;
   text-decoration: underline !important;
   text-underline-offset: 4px !important;
-}
+  background-color: #FF66B2!important;
+} */
 
 .nav-link:hover {
   color: white !important;            
